@@ -74,7 +74,6 @@ public class Main {
         System.out.println("Average value: " + totalMiddleDays + " days");
 
         System.out.println(" ");
-
         //task #5
         int masha = 67_760;
         int denis = 83_690;

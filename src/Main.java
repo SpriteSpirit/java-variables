@@ -17,5 +17,20 @@ public class Main {
         System.out.println("Cat: " + cat);
         System.out.println("Paper: " + paper);
 
+        /*
+            Задача 2.
+            Увеличьте значение каждой перечисленной в прошлой задаче переменной на 4
+            Для решения этой задачи используйте тип переменной var.
+            Выведите в консоль новые значения переменных.
+         */
+
+        dog += 2;
+        cat += 2;
+        paper += 2;
+
+        System.out.println("Dog: " + dog);
+        System.out.println("Cat: " + cat);
+        System.out.println("Paper: " + paper);
+
     }
 }

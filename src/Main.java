@@ -32,5 +32,24 @@ public class Main {
         System.out.println("Cat: " + cat);
         System.out.println("Paper: " + paper);
 
+        /*
+            Задача 3.
+            Теперь нужно уменьшить значение каждой переменной:
+
+            dog уменьшить на 3.5;
+            cat уменьшить на 1.6;
+            paper уменьшить на 7639.
+
+            Выведите в консоль новые значения переменных.
+         */
+
+        dog -= 3.5;
+        cat -= 1.6;
+        paper -= 7639;
+
+        System.out.println("Dog: " + dog);
+        System.out.println("Cat: " + cat);
+        System.out.println("Paper: " + paper);
+
     }
 }

@@ -2,14 +2,142 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        /*
+            Задача 1.
+            Необходимо присвоить переменным разные значения.
+            Для решения этой задачи используйте тип переменной var.
+            Выведите значения каждой переменной в консоль.
+         */
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        var dog = 8.0;
+        var cat = 3.6;
+        var paper = 763789;
+
+        System.out.println("Dog: " + dog);
+        System.out.println("Cat: " + cat);
+        System.out.println("Paper: " + paper);
+
+        /*
+            Задача 2.
+            Увеличьте значение каждой перечисленной в прошлой задаче переменной на 4
+            Для решения этой задачи используйте тип переменной var.
+            Выведите в консоль новые значения переменных.
+         */
+
+        dog += 2;
+        cat += 2;
+        paper += 2;
+
+        System.out.println("Dog: " + dog);
+        System.out.println("Cat: " + cat);
+        System.out.println("Paper: " + paper);
+
+        /*
+            Задача 3.
+            Теперь нужно уменьшить значение каждой переменной:
+
+            dog уменьшить на 3.5;
+            cat уменьшить на 1.6;
+            paper уменьшить на 7639.
+
+            Выведите в консоль новые значения переменных.
+         */
+
+        dog -= 3.5;
+        cat -= 1.6;
+        paper -= 7639;
+
+        System.out.println("Dog: " + dog);
+        System.out.println("Cat: " + cat);
+        System.out.println("Paper: " + paper);
+
+
+        /*
+            Задача 4.
+            Инициализируйте (присвойте значение) переменную friend значением 19.
+
+            Увеличьте значение переменной на 2, после чего поделите значение на 7.
+            После каждой операции выводите значение переменной в консоль.
+            В итоге у вас должно быть выведено 3 значения одной переменной.
+            Для решения этой задачи используйте тип переменной var.
+         */
+
+        var friend = 19;
+
+        System.out.println("Friend: " + friend);
+
+        friend += 2;
+        System.out.println("Friend: " + friend);
+
+        friend /= 2;
+        System.out.println("Friend: " + friend);
+
+         /*
+            Задача 5.
+            Инициализируйте переменную frog значением 3.5.
+            Увеличьте переменную в 10 раз и поделите на 3.5.
+            Добавьте к последнему значению переменной 4.
+            После каждой операции выводите значение переменной в консоль.
+            В итоге у вас должно быть выведено 4 значения одной переменной.
+            Для решения этой задачи используйте тип переменной var.
+         */
+
+        var frog = 3.5;
+
+        System.out.println(frog);
+
+        frog *= 10;
+        System.out.println(frog);
+
+        frog /= 3.5;
+        System.out.println(frog);
+
+        frog += 4;
+        System.out.println(frog);
+
+        /*
+            Задача 6.
+            В боксе перед каждым боем спортсменов взвешивают.
+            Это делают для того, чтобы убедиться, что боксеры соответствуют своей весовой категории и бой будет честным.
+            Масса одного боксера — 78.2 кг.
+            Масса второго боксера — 82.7 кг.
+            Подсчитайте и выведите в консоль общую массу двух бойцов.
+            Подсчитайте и выведите в консоль разницу между массами бойцов.
+            Для решения этой задачи используйте тип переменной var.
+         */
+
+        var boxer1 = 78.2;
+        var boxer2 = 82.7;
+
+        System.out.println("Общая масса двух бойцов: " + (boxer1 + boxer2) + " кг.");
+        System.out.println("Разница между массами двух бойцов: " + Math.abs(boxer1 - boxer2) + " кг.");
+
+        /*
+            Задача 7.
+            Найдите остаток от деления между двумя весами. Для решения этой задачи используйте тип переменной var.
+         */
+
+        System.out.println("Остаток от деления между двумя массами: " + (boxer2 % boxer1) + " кг.");
+
+        /*
+            Задача 8.
+            Решите задачу с помощью арифметических функций.
+            640 часов работы поделено между сотрудниками.
+            Если каждый сотрудник посвящает работе 8 часов, то сколько всего работников в компании?
+            Выведите результат задачи в консоль в формате: «Всего работников в компании — … человек».
+            Посчитайте, сколько часов работы должно быть поделено между сотрудниками, если в компании работает на 94 человека больше.
+            Выведите результат задачи в консоль в формате:
+            «Если в компании работает … человек, то всего … часов работы может быть поделено между сотрудниками».
+            Для решения этой задачи используйте тип переменной var.
+         */
+
+        var totalWorkHours = 640;
+        var eachEmployeeWorkHoursAtDay = 8;
+        var totalEmployees = totalWorkHours / eachEmployeeWorkHoursAtDay;
+        var totalEmployeesPlus94 = totalEmployees + 94;
+        var totalWorkHoursForAll = totalWorkHours / totalEmployeesPlus94;
+
+        System.out.println("Всего работников в компании - " + totalEmployees + " человек");
+        System.out.println("Если в компании работает " + totalEmployeesPlus94 + " человек, то всего " + totalWorkHoursForAll + " часов работы может быть поделено между сотрудниками");
     }
 }
